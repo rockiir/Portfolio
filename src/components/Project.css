@@ -68,34 +68,34 @@
 
   @media screen and (max-width: 768px) {
     .projeto {
-      flex-direction: column; /* Altera para layout de coluna */
-      align-items: flex-start; /* Alinhar itens à esquerda */
-      margin: 10px; /* Reduz a margem */
-      padding: 10px; /* Reduz o preenchimento */
-      max-width: 100%; /* Define a largura máxima para a largura da tela */
+      flex-direction: column; 
+      align-items: flex-start; 
+      margin: 10px; 
+      padding: 10px; 
+      max-width: 100%;
     }
   
     .projeto img {
-      max-width: 100%; /* Imagem com largura máxima de 100% da largura do contêiner */
-      margin: 0; /* Remove a margem direita da imagem */
+      max-width: 100%; 
+      margin: 0; 
     }
   
     .descricao {
-      text-align: center; /* Centraliza o texto */
+      text-align: center; 
     }
   
     .descricao h3 {
-      font-size: 20px; /* Reduz o tamanho da fonte do título */
-      margin: 10px 0; /* Adiciona margem superior e inferior ao título */
+      font-size: 20px; 
+      margin: 10px 0; 
     }
   
     .descricao p {
-      font-size: 14px; /* Reduz o tamanho da fonte da descrição */
-      margin: 10px 0; /* Adiciona margem superior e inferior à descrição */
+      font-size: 14px; 
+      margin: 10px 0; 
     }
   
     button {
-      margin: 10px 0; /* Adiciona margem superior e inferior ao botão */
+      margin: 10px 0; 
     }
   }
   

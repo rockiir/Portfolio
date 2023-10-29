@@ -17,10 +17,10 @@ function App() {
     <div>
       <Router>
         <ThemeProvider theme={theme}>
-        <Navbar /> {/* Deixe o Navbar fora do ThemeProvider */}
+        <Navbar /> 
           <div className="App">
             <Routes>
-              <Route path="/" element={<Home />} />
+              <Route path="/Portfolio" element={<Home />} />
               <Route path="/About" element={<About />} />
               <Route path="/Contact" element={<Contact />} />
               <Route path="/Projects" element={<Projects />} />

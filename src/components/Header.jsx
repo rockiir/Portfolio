@@ -4,11 +4,10 @@ import './Header.css';
 
 function Header() {
     const handleSaibaMaisClick = () => {
-        window.location.href = '/About'; // Redirecionar para a página de projetos
+        window.location.href = '/About'; 
     };
 
     const handleLinkedinClick = () => {
-        // Redirecionar para o perfil do LinkedIn em uma nova aba
         window.open('https://www.linkedin.com/in/raquel-matos-mauricio/', '_blank');
     };
 

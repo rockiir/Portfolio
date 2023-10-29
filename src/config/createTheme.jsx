@@ -1,6 +1,5 @@
 import { createTheme } from '@mui/material/styles';
 
-// Defina suas variáveis de CSS como valores de cor do Material-UI
 const theme = createTheme({
   palette: {
     primary: {

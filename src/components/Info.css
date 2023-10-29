@@ -49,16 +49,15 @@
     margin: 1% 5rem 0 5rem;
     text-align: center;
     font-family: Nunito;
-    min-width: 400px; /* Largura mínima desejada */
-    max-width: 900px; /* Largura máxima desejada */
+    min-width: 400px; 
+    max-width: 900px; 
     text-align: center;
-    margin: 1% auto; /* Ajusta as margens vertical (1%) e centraliza horizontalmente (auto) */
+    margin: 1% auto; 
 
 
 
 }
 
-/* Media query para dispositivos com largura de tela menor ou igual a 768px */
 @media screen and (max-width: 768px) {
     .titulo {
         font-size: 20px;
@@ -73,13 +72,13 @@
 
     .titulo-info {
         font-size: 18px;
-        margin-top: 15px; /* Ajuste a margem superior do título-info */
-        margin-bottom: 5px; /* Ajuste a margem inferior do título-info */
+        margin-top: 15px; 
+        margin-bottom: 5px; 
     }
 
     .texto-bloco-info {
         font-size: 16px;
-        font-weight: normal; /* Remova o negrito do texto-bloco-info */
+        font-weight: normal;
         margin: 10px 0;
     }
 

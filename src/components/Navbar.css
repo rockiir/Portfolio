@@ -44,7 +44,6 @@ a:hover {
   
 }
 
-/* Estilo para o menu quando está visível */
 nav.show {
   display: block;
 }
@@ -58,22 +57,21 @@ nav.show {
 }
 
 .header-blur {
-  backdrop-filter: blur(10px); /* Adiciona um efeito de desfoque ao fundo */
-  background-color: rgba(255, 255, 255, 0.3); /* Cor de fundo com transparência */
+  backdrop-filter: blur(10px); 
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 
-/* Estilo para o botão de menu em dispositivos menores */
 @media screen and (max-width: 768px) {
   .main-content {
-    margin-top: 60px; /* Adiciona uma margem superior para criar espaço para o menu */
+    margin-top: 60px; 
   }
 
   .menu-button {
-    width: 100%; /* Define a largura do botão como 100% da tela */
+    width: 100%; 
     background-color: var(--primaryColor);
-    position: fixed; /* Mantém o menu fixo no topo */
-    top: 0; /* Mantém o menu junto ao topo da tela */
+    position: fixed; 
+    top: 0; 
     display: block;
     color: #fff;
     border: none;

@@ -1,7 +1,7 @@
 import React from 'react';
 import Sobre from '../components/Sobre';
 import Info from '../components/Info';
-import imagem2 from '../images/image9.png'; // Importe a imagem corretamente
+import imagem2 from '../images/image9.png'; 
 
 
 function About() {

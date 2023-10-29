@@ -23,23 +23,23 @@
 
   }
   .conteudo {
-    display: flex; /* Use flexbox para alinhar o texto e a imagem lado a lado */
-    align-items: center; /* Alinhe verticalmente no centro */
-    justify-content: space-between; /* Distribua espaço igualmente entre o texto e a imagem */
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
   }
   
   .texto {
-    flex: 1; /* Ocupa o espaço restante disponível */
+    flex: 1; 
   }
   
   .imagem {
-    flex: 0.5; /* Ocupa o espaço restante disponível */
+    flex: 0.5; 
   }
   
-  /* Estilize a imagem conforme necessário, por exemplo: */
+ 
   .imagem img {
     max-width: 150%;
-    height: auto; /* Mantenha a proporção da imagem */
+    height: auto;
   }
   
   @media screen and (max-width: 768px) {
@@ -48,8 +48,8 @@
       padding: 20px;
       border-radius: 5px;
       background-image: url('../images/image9.png');
-      background-size: cover; /* Isso faz a imagem cobrir todo o elemento */
-      background-position: center; /* Isso centraliza a imagem no elemento */
+      background-size: cover;
+      background-position: center; 
       background-repeat: no-repeat;
   }
   
@@ -68,25 +68,23 @@
       color: #ffffff;
   }
   
-  /* Estilos para tornar o texto e a imagem responsivos em telas menores */
   .conteudo {
-      display: flex; /* Use flexbox para alinhar o texto e a imagem lado a lado */
-      flex-direction: column; /* Altera a direção do flexbox para empilhar em coluna em telas menores */
-      align-items: center; /* Alinhe verticalmente no centro */
+      display: flex; 
+      flex-direction: column; 
+      align-items: center; 
   }
   
   .texto {
-      flex: 1; /* Ocupa o espaço disponível, empurrando a imagem para baixo */
-      text-align: center; /* Centralize o texto */
-      margin-bottom: 20px; /* Adicione margem inferior para separar o texto da imagem */
+      flex: 1; 
+      text-align: center; 
+      margin-bottom: 20px;
   }
   
   .imagem {
-      flex: 1; /* Ocupa o espaço disponível */
-      text-align: center; /* Centralize a imagem */
+      flex: 1; 
+      text-align: center; 
   }
   
-  /* Estilize a imagem conforme necessário, por exemplo: */
   .imagem img {
       display: none;
       position: fixed;

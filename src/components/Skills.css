@@ -1,13 +1,12 @@
-/* Skills.css */
 
 .skills {
   text-align: center;
   margin-top: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centraliza horizontalmente */
-  justify-content: center; /* Centraliza verticalmente */
-  /* height: auto; */ /* Remova a altura fixa, se necessário */
+  align-items: center; 
+  justify-content: center; 
+ 
 }
 
 .skill {
@@ -32,8 +31,8 @@ p {
 }
 
 .skill:hover {
-  transform: translateY(-5px); /* Mova para cima 5 pixels ao passar o mouse */
-  transition: transform 0.2s ease; /* Adicione uma transição suave */
+  transform: translateY(-5px); 
+  transition: transform 0.2s ease; 
 }
 
 
