@@ -1,0 +1,15 @@
+@import '../config/colors';
+
+.MuiTabs-root {
+    color: var(--primaryColor);
+  }
+  
+  .MuiTab-root {
+    font-size: 16px; 
+    font-weight: bold; 
+  }
+  
+  .MuiBox-root {
+    padding: 0 0 0 3%; 
+  }
+  

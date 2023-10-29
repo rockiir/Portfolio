@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+@import '../config/colors';
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.tituloDev {
+    font-size: 18px;
+    color: var(--titleColor);
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+}
+
+.bloco-1 {
+    margin: 7% 7% 0% 3%;
+}
+
+.header h1 {
+    font-size: 300%; /* Reduz o tamanho da fonte para dispositivos móveis */
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    font-family: 'Playfair Display', serif;
+    font-style: inherit;
+}
+
+.descricao {
+    color: var(--textColor);
+    font-family: Nunito;
+    font-size: 16px; /* Reduz o tamanho da fonte para dispositivos móveis */
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    margin: 0 0 4% 0;
+}
+
+.button-saiba-mais,
+.button-linkedin {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 8px;
+    align-items: flex-start;
+}
+
+.button-saiba-mais {
+    background-color: var(--primaryColor);
+    color: #000000;
+}
+
+.button-linkedin {
+    background-color: #ebebeb;
+    color: #000000;
+    box-shadow: inset 0 0 0 3px #000000; /* Estilo da borda interna */
+}
+
+.button-saiba-mais:hover {
+    background-color: #d6a424;
+}
+.image {
+    display: block;
+    max-width: 200%;
+    height: auto;
+    margin: 0px 10px;
+}
+
+/* Media query para dispositivos com largura de tela menor ou igual a 768px */
+@media screen and (max-width: 768px) {
+    .container{
+        background-image: url('../images/image5.png');
+        background-size: cover; /* Isso faz a imagem cobrir todo o elemento */
+        background-position: center; /* Isso centraliza a imagem no elemento */
+        background-repeat: no-repeat;
+    }
+    
+    .tituloDev {
+        font-size: 14px;
+        
+        
+    }
+    
+    .bloco-1 {
+        background-color: #ffffff9c;
+        margin: 7% 7% 0% 3%;
+    }
+
+    .header h1 {
+        font-size: 28px;
+    }
+
+    .descricao {
+        color: rgb(0, 0, 0);
+        font-family: Nunito;
+        font-size: 16px; /* Reduz o tamanho da fonte para dispositivos móveis */
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        margin: 0 0 8% 0;
+    }
+
+    .button-saiba-mais,
+    .button-linkedin {
+        font-size: 12px;
+    }
+
+    .image {
+        max-width: 100%;
+        margin: 0;
+        display: none; 
+
+
+    }
+    
+    
+}
+

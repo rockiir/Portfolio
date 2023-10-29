@@ -1,0 +1,29 @@
+/* Adicione este CSS ao seu arquivo CSS */
+.timeline-item {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+  }
+  
+  .timeline-item.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+
+
+  @keyframes animacao-home {
+    from {
+      opacity: 0;
+      transform: translateY(0px); 
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0); /* Voltar à posição original */
+    }
+  }
+  
+  .animação-home {
+    animation: animacao-home 1s ease; /* Defina a duração da animação e o modo de transição desejados */
+  }
+  

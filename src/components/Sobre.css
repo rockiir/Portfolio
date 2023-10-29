@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+@import '../config/colors';
+
+.sobre {
+    padding: 10px 0 0 0;
+    border-radius: 5px;
+    background-color: var(--primaryColor);
+  }
+  
+  .sobre h2 {
+    font-size: 30px;
+    color: #333;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold; 
+
+  }
+  
+  .sobre p {
+    margin: 10%;
+    font-size: 16px;
+    color: #333;
+    font-family: Nunito;
+
+  }
+  .conteudo {
+    display: flex; /* Use flexbox para alinhar o texto e a imagem lado a lado */
+    align-items: center; /* Alinhe verticalmente no centro */
+    justify-content: space-between; /* Distribua espaço igualmente entre o texto e a imagem */
+  }
+  
+  .texto {
+    flex: 1; /* Ocupa o espaço restante disponível */
+  }
+  
+  .imagem {
+    flex: 0.5; /* Ocupa o espaço restante disponível */
+  }
+  
+  /* Estilize a imagem conforme necessário, por exemplo: */
+  .imagem img {
+    max-width: 150%;
+    height: auto; /* Mantenha a proporção da imagem */
+  }
+  
+  @media screen and (max-width: 768px) {
+
+    .sobre {
+      padding: 20px;
+      border-radius: 5px;
+      background-image: url('../images/image9.png');
+      background-size: cover; /* Isso faz a imagem cobrir todo o elemento */
+      background-position: center; /* Isso centraliza a imagem no elemento */
+      background-repeat: no-repeat;
+  }
+  
+  .conteudo {
+    background-color: #0000008e;
+    margin: 7% 7% 0% 3%;
+}
+
+  .sobre h2 {
+      font-size: 30px;
+      color: #ffffff;
+  }
+  
+  .sobre p {
+      font-size: 16px;
+      color: #ffffff;
+  }
+  
+  /* Estilos para tornar o texto e a imagem responsivos em telas menores */
+  .conteudo {
+      display: flex; /* Use flexbox para alinhar o texto e a imagem lado a lado */
+      flex-direction: column; /* Altera a direção do flexbox para empilhar em coluna em telas menores */
+      align-items: center; /* Alinhe verticalmente no centro */
+  }
+  
+  .texto {
+      flex: 1; /* Ocupa o espaço disponível, empurrando a imagem para baixo */
+      text-align: center; /* Centralize o texto */
+      margin-bottom: 20px; /* Adicione margem inferior para separar o texto da imagem */
+  }
+  
+  .imagem {
+      flex: 1; /* Ocupa o espaço disponível */
+      text-align: center; /* Centralize a imagem */
+  }
+  
+  /* Estilize a imagem conforme necessário, por exemplo: */
+  .imagem img {
+      display: none;
+      position: fixed;
+
+
+  }
+  }
+  

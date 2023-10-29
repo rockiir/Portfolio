@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+@import '../config/colors';
+
+.Info {
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+.titulo-container {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.titulo {
+    font-size: 24px;
+    color: #333;
+    display: inline;
+    border-bottom: 2px solid #ffc107;
+    padding-bottom: 5px;
+    margin-bottom: 8px;
+    font-family: 'Playfair Display', serif;
+
+}
+
+.titulo-info {
+    font-size: 20px;
+    color: #333;
+    display: inline;
+    padding-bottom: 5px;
+    margin-top: 40px;
+    margin-bottom: 8px;
+}
+
+.texto-bloco-info {
+    font-size: 18px;
+    color: #666;
+    margin: 1% 0 0 0;
+    text-align: center;
+    font-weight: bold;
+    font-family: Nunito;
+
+}
+
+.texto-descricacao {
+    font-size: 14px;
+    color: #666;
+    margin: 1% 5rem 0 5rem;
+    text-align: center;
+    font-family: Nunito;
+    min-width: 400px; /* Largura mínima desejada */
+    max-width: 900px; /* Largura máxima desejada */
+    text-align: center;
+    margin: 1% auto; /* Ajusta as margens vertical (1%) e centraliza horizontalmente (auto) */
+
+
+
+}
+
+/* Media query para dispositivos com largura de tela menor ou igual a 768px */
+@media screen and (max-width: 768px) {
+    .titulo {
+        font-size: 20px;
+        color: #333;
+        display: inline;
+        border-bottom: 2px solid #ffc107;
+        padding-bottom: 5px;
+        margin-bottom: 8px;
+        font-family: 'Playfair Display', serif;
+    
+    }
+
+    .titulo-info {
+        font-size: 18px;
+        margin-top: 15px; /* Ajuste a margem superior do título-info */
+        margin-bottom: 5px; /* Ajuste a margem inferior do título-info */
+    }
+
+    .texto-bloco-info {
+        font-size: 16px;
+        font-weight: normal; /* Remova o negrito do texto-bloco-info */
+        margin: 10px 0;
+    }
+
+    .texto-descricacao {
+        font-size: 12px;
+        margin: 10px 0;
+    }
+}

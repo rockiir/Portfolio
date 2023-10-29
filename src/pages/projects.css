@@ -1,0 +1,22 @@
+/* Projects.css */
+body{
+    margin: 0;
+    padding: 0;
+}
+.content-project{
+margin-top: 10%;
+
+}
+.projetos-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os projetos sejam quebrados para a próxima linha quando não couberem mais na tela */
+    gap: 20px; /* Espaçamento entre os projetos */
+  }
+  
+  .projetos-container > * {
+    flex: 1; /* Faz com que cada projeto ocupe uma parte igual do espaço disponível */
+    max-width: calc(50% - 10px); /* Limita a largura de cada projeto a 50% com algum espaço entre eles */
+  }
+
+  
+  

@@ -1,0 +1,55 @@
+@import '../src/config/colors.css';
+
+/* Estilize a barra de rolagem */
+::-webkit-scrollbar {
+    width: 10px; /* Largura da barra de rolagem */
+  }
+  
+  /* Estilize o polegar da barra de rolagem (a parte que você arrasta) */
+  ::-webkit-scrollbar-thumb {
+    background-color: #88888893; /* Cor de fundo do polegar */
+    border-radius: 5px; /* Borda arredondada do polegar */
+  }
+  
+  /* Estilize a trilha da barra de rolagem (a parte onde o polegar se move) */
+  ::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Cor de fundo da trilha */
+  }
+  
+  /* Estilize as peças individuais da trilha (não suportado em todos os navegadores) */
+  ::-webkit-scrollbar-track-piece {
+    background-color: #f1f1f1;
+  }
+  
+  * {
+    scrollbar-width: thin; /* Largura da barra de rolagem no Firefox */
+    scrollbar-color: #888 #f1f1f1; /* Cores do polegar e da trilha no Firefox */
+  }
+
+  .whatsapp-button {
+    position: fixed;
+    bottom: 20px; /* Distância da parte inferior da página */
+    right: 20px; /* Distância da borda direita da página */
+  }
+  
+  .whatsapp-button a {
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 10px 20px;
+  }
+  .whatsapp-button a:hover {
+    display: block;
+    color: #0fb100;
+    text-align: center;
+    padding: 10px 20px;
+  }
+  
+  .whatsapp-button img {
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+  
+  
