@@ -29,7 +29,7 @@ function Header() {
           ☰ Menu
         </button>
         <ul>
-          <li><Link to="/">Home</Link></li>
+          <li><Link to="/Portfolio">Home</Link></li>
           <li><Link to="/About">Sobre</Link></li>
           <li><Link to="/Projects">Portfólio</Link></li>
           <li><Link to="/Contact">Contato</Link></li>
