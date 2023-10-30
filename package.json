@@ -1,7 +1,7 @@
 {
-  "homepage":"https://raqueldematos.tech/Portfolio/",
+  "homepage":"https://rockiir.github.io/Portfolio/",
   "name": "meu-portfolio",
-  "private": false,
+  "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
