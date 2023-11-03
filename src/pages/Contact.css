@@ -18,6 +18,7 @@ p {
 .contact-container {
   display: flex;
   justify-content: center;
+  margin: 0 0 10% 0;
 }
 
 .MuiFormControl-root {

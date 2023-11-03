@@ -1,6 +1,6 @@
 import React from 'react';
-import './Footer.css'; 
-import { FaGithub,FaLinkedinIn } from 'react-icons/fa';
+import './Footer.css';
+import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 
 
 function Footer() {
@@ -21,19 +21,17 @@ function Footer() {
             fill="#FDC435"
           />
         </svg>
-          </div>
-        <div className="footer-content">
-          <div className="social-media">
-            <a href="#">  <FaGithub />Github</a>
-            <a href="#"><FaLinkedinIn />Linkedin</a>
-          </div>
-          <div className="contact-info">
-            <p>Entre em contato:</p>
-            <ul>
-              <li>Email: contato@example.com</li>
-              <li>Telefone: (123) 456-7890</li>
-              <li>Endereço: Rua Exemplo, 123, Cidade Exemplo</li>
-            </ul>
+      </div>
+      <div className="footer-content">
+        <div className="social-media">
+          <a href="https://github.com/rockiir">  <FaGithub />Github</a>
+          <a href="https://www.linkedin.com/in/raquel-matos-mauricio"><FaLinkedinIn />Linkedin</a>
+        </div>
+        <div className="contact-info">
+          <p>Entre em contato:</p>
+          <ul>
+            <li><p>E-mail: <a href="mailto:raquelmatos09@yahoo.com.br">raquelmatos09@yahoo.com.br</a></p></li>
+          </ul>
         </div>
       </div>
     </footer>

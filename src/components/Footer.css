@@ -12,6 +12,7 @@
   width: 100%;
   color: #fff;
   text-align: center;
+
 }
 
 .footer-content {
@@ -96,7 +97,7 @@
 
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1500px) {
 
   .full-width-svg{
     display: none; 

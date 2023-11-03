@@ -16,6 +16,7 @@ import PageNotFound from './pages/PageNotFound';
 function App() {
   return (
     <div>
+    <div>
       <Router>
         <ThemeProvider theme={theme}>
         <Navbar /> 
@@ -32,10 +33,11 @@ function App() {
         </ThemeProvider>
         <Footer />
       </Router>
-      <div className="whatsapp-button">
-  <a href="https://api.whatsapp.com/send?phone=5531985064785" target="_blank">
-    <IoLogoWhatsapp size={44} />
     <span></span>
+    </div>
+      <div className="whatsapp-button">
+<a href="https://api.whatsapp.com/send?phone=5531985064785" target="_blank" rel="noreferrer noopener">
+    <IoLogoWhatsapp size={44} />
   </a>
 </div>
     </div>
