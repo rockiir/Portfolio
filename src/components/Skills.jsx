@@ -1,7 +1,8 @@
 import React from 'react';
 import './Skills.css';
 import { Typography, Box } from '@mui/material';
-import { FaJs, FaHtml5, FaCss3, FaPython, FaReact, FaFigma, FaNode, FaAngular } from 'react-icons/fa';
+import { FaJs, FaHtml5, FaCss3, FaPython, FaReact, FaFigma, FaNode  } from 'react-icons/fa';
+import { SiCsharp  } from 'react-icons/si';
 import CircularProgress from '@mui/material/CircularProgress';
 
 function Skills() {
@@ -13,7 +14,7 @@ function Skills() {
     { name: 'Python', level: 60, icon: <FaPython /> },
     { name: 'Node', level: 60, icon: <FaNode /> },
     { name: 'Figma', level: 80, icon: <FaFigma /> },
-    { name: 'Angular', level: 60, icon: <FaAngular /> },
+    { name: 'C#', level: 60, icon: <SiCsharp  /> },
   ];
 
   return (
@@ -43,3 +44,4 @@ function Skills() {
 }
 
 export default Skills;
+

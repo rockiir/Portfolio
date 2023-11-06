@@ -61,9 +61,6 @@
     cursor: pointer;
   }
   
-  button:hover {
-    background-color: var(--secondaryColor);
-  }
   
 
   @media screen and (max-width: 768px) {

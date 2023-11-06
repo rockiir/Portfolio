@@ -3,7 +3,7 @@ body{
     padding: 0;
 }
 .content-project{
-margin-top: 10%;
+margin-top: 6%;
 
 }
 .projetos-container {
@@ -17,5 +17,11 @@ margin-top: 10%;
     max-width: calc(50% - 10px); 
   }
 
+  @media screen and (max-width: 768px) {
+    .content-project{
+      margin-top: 10%;
+      
+      }
   
+  }
   

@@ -3,6 +3,8 @@ import './Sobre.css';
 
 function Sobre(props) {
   return (
+    <div className="container-sobre">
+
     <div className="sobre">
       <div className="conteudo">
         <div className="texto">
@@ -13,6 +15,7 @@ function Sobre(props) {
           <img src={props.imagemSrc} alt={props.imagemAlt} />
         </div>
       </div>
+    </div>
     </div>
   );
 }

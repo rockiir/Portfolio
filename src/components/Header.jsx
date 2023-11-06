@@ -1,13 +1,11 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom'; // Importe useHistory
+import { useNavigate } from 'react-router-dom';
 import imagem from '../images/image6.png';
 import './Header.css';
 
 function Header() {
-  const history = useNavigate(); // Inicialize o useHistory
-
+  const history = useNavigate(); 
   const handleSaibaMaisClick = () => {
-    // Use history.push para redirecionar para a página "About"
     history('/About');
   };
 

@@ -1,10 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
 @import '../config/colors';
 
+.container-sobre{
+  max-width: 1260px;
+  margin: 0 auto;
+}
+
 .sobre {
     padding: 10px 0 0 0;
     border-radius: 5px;
     background-color: var(--primaryColor);
+    max-width: 1060px;
+    margin: 0 2%;
+
   }
   
   .sobre h2 {
@@ -93,3 +101,26 @@
   }
   }
   
+
+  @media screen and (min-width: 1500px) {
+    .container-sobre{
+      max-width: 100%;
+      margin: 0 auto;
+    }
+    
+    .sobre {
+        padding: 10px 0 0 0;
+        border-radius: 5px;
+        background-color: var(--primaryColor);
+        max-width: 100%;
+        margin: 0 0;
+        width: 100%;
+    
+      }
+      .imagem img {
+        max-width: 70%;
+        height: auto;
+      }
+      
+  
+  }

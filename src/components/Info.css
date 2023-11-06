@@ -49,14 +49,33 @@
     margin: 1% 5rem 0 5rem;
     text-align: center;
     font-family: Nunito;
-    min-width: 400px; 
-    max-width: 900px; 
+    min-width: 400px;
+    max-width: 900px;
     text-align: center;
-    margin: 1% auto; 
-
-
+    margin: 1% auto;
 
 }
+
+.texto-link {
+    background-color: #fdbd1b;
+    margin-top: 10%;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.texto-link:hover {
+    background-color: #d6b03f;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
 
 @media screen and (max-width: 768px) {
     .titulo {
@@ -67,13 +86,13 @@
         padding-bottom: 5px;
         margin-bottom: 8px;
         font-family: 'Playfair Display', serif;
-    
+
     }
 
     .titulo-info {
         font-size: 18px;
-        margin-top: 15px; 
-        margin-bottom: 5px; 
+        margin-top: 15px;
+        margin-bottom: 5px;
     }
 
     .texto-bloco-info {

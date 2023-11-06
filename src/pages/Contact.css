@@ -1,7 +1,12 @@
 @import '../config/colors';
 
+
+.container-contato{
+  margin-top: 10%;
+
+}
+
 h2 {
-  margin: 10% 0 1% 0;
   font-size: 24px;
   color: var(--primaryColor); 
   text-align: center ;
@@ -38,6 +43,50 @@ p {
   text-align: center;
 }
 
+.button {
+  width: 140px;
+  height: 45px;
+  font-size: 23px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background:#fdbd1b;
+  color: rgb(255, 255, 255);
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 700;
+  position: relative;
+  transition: all 0.5s;
+  z-index: 1;
+ }
+ 
+ .button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background-color: #5c3737;
+  z-index: -1;
+  transition: all 0.5s;
+
+ }
+ 
+ .button:hover::before {
+  width: 100%;
+ }
+ 
+ .button:hover {
+  color: rgb(255, 255, 255);
+ }
+ 
+ .button:active:before {
+  background: #b9b9b9;
+ }
+
+
+
+
 @keyframes animacao-home {
   from {
     opacity: 0;
@@ -50,5 +99,6 @@ p {
 }
 
 .animação-contato {
-  animation: animacao-home 1s ease; 
+  animation: animacao-home 1s linear; 
 }
+

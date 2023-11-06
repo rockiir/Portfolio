@@ -16,6 +16,11 @@ function Contact() {
       message: message,
       reply_to: email,
     }).then(function(response) {
+      setEnviado(true);
+
+      setTimeout(() => {
+        setEnviado(false);
+      }, 5000);
       console.log('E-mail enviado com sucesso!', response);
       setEnviado(true); 
     }, function(error) {
@@ -24,7 +29,6 @@ function Contact() {
       setTimeout(() => {
         setShowAlert(false);
       }, 5000);
-
       console.error('Erro ao enviar o e-mail:', error);
     });
   };
@@ -44,6 +48,7 @@ function Contact() {
   };
 
   return (
+    <div className='container-contato'>
     <div className="animação-contato">
       <h2>Entre em Contato</h2>
       <p>E-mail: <a href="mailto:raquelmatos09@yahoo.com.br">raquelmatos09@yahoo.com.br</a></p>
@@ -77,7 +82,9 @@ function Contact() {
             rows={4}
             defaultValue=""
           />
-          <button type="submit">Enviar</button>
+          <button type="submit" className='button'>  
+         
+Enviar</button>
         </Box>
       </div>
 
@@ -88,6 +95,7 @@ function Contact() {
           </Alert>
         </div>
       )}
+      
 
       {showAlert && (
         <div className="top-alert">
@@ -96,6 +104,7 @@ function Contact() {
           </Alert>
         </div>
       )}
+    </div>
     </div>
   );
 }
