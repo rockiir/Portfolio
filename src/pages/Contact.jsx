@@ -36,6 +36,19 @@ function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+  const form = e.target;
+
+const requiredFields = ['nome', 'email', 'mensagem'];
+  const areAllRequiredFieldsFilled = requiredFields.every((field) => {
+    const fieldValue = form[field].value;
+    return fieldValue !== '' && fieldValue !== null && fieldValue !== undefined;
+  });
+
+  // Se algum campo obrigatório estiver vazio, exibe uma mensagem de erro
+  if (!areAllRequiredFieldsFilled) {
+    alert('Todos os campos obrigatórios devem ser preenchidos!');
+    return;
+  }
     const name = e.target.nome.value;
     const email = e.target.email.value;
     const message = e.target.mensagem.value;
@@ -60,7 +73,7 @@ function Contact() {
           component="form"
           onSubmit={handleSubmit}
           sx={{
-            '& > :not(style)': { m: 1, width: '100%' },
+            '& > :not(style)': { m: 1, width: '95%' },
           }}
           noValidate
           autoComplete="off"

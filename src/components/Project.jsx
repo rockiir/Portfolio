@@ -23,7 +23,7 @@ function Projeto(props) {
   };
 
   return (
-    <div className="projeto" style={{ minWidth: '300px', maxWidth: '450px' }}>
+    <div className="projeto" >
       <img src={props.imagemSrc} alt={props.imagemAlt} />
       <div className="descricao">
         <h3>{props.titulo}</h3>

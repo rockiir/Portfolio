@@ -84,7 +84,12 @@ p {
   background: #b9b9b9;
  }
 
-
+ @media screen and (max-width: 768px) {
+  .container-contato{
+    margin-top: 20%;
+  
+  }
+}
 
 
 @keyframes animacao-home {
@@ -101,4 +106,6 @@ p {
 .animação-contato {
   animation: animacao-home 1s linear; 
 }
+
+
 

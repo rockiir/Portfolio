@@ -9,7 +9,6 @@ margin-top: 6%;
 .projetos-container {
     display: flex;
     flex-wrap: wrap; 
-    gap: 20px; 
   }
   
   .projetos-container > * {

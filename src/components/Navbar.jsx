@@ -29,10 +29,10 @@ function Header() {
           ☰ Menu
         </button>
         <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/About">Sobre</Link></li>
-          <li><Link to="/Projects">Portfólio</Link></li>
-          <li><Link to="/Contact">Contato</Link></li>
+        <li><Link to="/" onClick={() => setShowMenu(false)}>Home</Link></li>
+<li><Link to="/About" onClick={() => setShowMenu(false)}>Sobre</Link></li>
+<li><Link to="/Projects" onClick={() => setShowMenu(false)}>Portfólio</Link></li>
+<li><Link to="/Contact" onClick={() => setShowMenu(false)}>Contato</Link></li>
         </ul>
       </nav>
     </header>
