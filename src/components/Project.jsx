@@ -8,6 +8,8 @@ import ImageListItem from '@mui/material/ImageListItem';
 
 function Projeto(props) {
   const [dialogOpen, setDialogOpen] = useState(false);
+  const { tecnologias } = props; // Adicione esta linha para extrair tecnologias das props
+
 
   const handleDialogOpen = () => {
     setDialogOpen(true);
@@ -27,14 +29,22 @@ function Projeto(props) {
       <img src={props.imagemSrc} alt={props.imagemAlt} />
       <div className="descricao">
         <h3>{props.titulo}</h3>
-        <p>{descricaoLimitada}</p>
+        <p>{props.descricaoResumida}</p>
         <Button onClick={handleDialogOpen} variant="contained" color="primary">
           Ver Projeto
         </Button>
         <Dialog open={dialogOpen} onClose={handleDialogClose} maxWidth="sm">
           <div className="dialog-content">
             <h2>{props.titulo}</h2>
-            <p>{props.descricao}</p>
+            <p className='paragrafoDescricao' dangerouslySetInnerHTML={{ __html: props.descricao }} />
+            <div className="tags"><strong>Tecnologias:  
+              {tecnologias && tecnologias.map((tecnologia, index) => (
+                
+                <span key={index}>#{tecnologia}</span>
+              ))}
+              </strong>
+            </div>
+
             <Carousel showThumbs={false} autoPlay={true} interval={2000} infiniteLoop={true}>
               <div>
                 <ImageListItem>
@@ -52,6 +62,7 @@ function Projeto(props) {
                 </ImageListItem>
               </div>
             </Carousel>
+
             <div className="button-container">
               <Button
                 component="a"

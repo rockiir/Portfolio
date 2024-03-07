@@ -11,6 +11,7 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     background-color: #fff;
     transition: transform 0.2s;
+    max-width: 800px;
   }
   
   .projeto:hover {
@@ -34,9 +35,9 @@
     margin-bottom: 10px;
     font-family: 'Playfair Display', serif;
   }
-  .descricao h2 {
-    font-size: 24px;
-    color: #333;
+  .dialog-content h2 {
+    font-size: 28px;
+    color: var(--primaryColor); 
     margin-bottom: 10px;
     font-family: 'Playfair Display', serif;
   }
@@ -46,10 +47,18 @@
     color: #666;
     margin: 10px;
   }
-  
+  .paragrafoDescricao {
+padding:  0% 4% 5% 6%;
+margin-top: 3%;
+  }
+  .tags{
+    margin: 0 10%;
+  text-align: center;
+  }
   a {
     text-decoration: none;
   }
+
   
   button {
     background-color: #ddd;
@@ -60,8 +69,6 @@
     font-size: 16px;
     cursor: pointer;
   }
-  
-  
 
   @media screen and (max-width: 768px) {
     .projeto {
