@@ -8,8 +8,7 @@ import ImageListItem from '@mui/material/ImageListItem';
 
 function Projeto(props) {
   const [dialogOpen, setDialogOpen] = useState(false);
-  const { tecnologias } = props; // Adicione esta linha para extrair tecnologias das props
-
+  const { tecnologias, imagens } = props; // Adicione imagens como parte das props
 
   const handleDialogOpen = () => {
     setDialogOpen(true);
@@ -26,8 +25,10 @@ function Projeto(props) {
 
   return (
     <div className="projeto" >
-      <img src={props.imagemSrc} alt={props.imagemAlt} />
-      <div className="descricao">
+<div className="imagem-principal">
+        <img src={imagens[0]} alt={props.imagemAlt} />
+      </div>
+            <div className="descricao">
         <h3>{props.titulo}</h3>
         <p>{props.descricaoResumida}</p>
         <Button onClick={handleDialogOpen} variant="contained" color="primary">
@@ -46,21 +47,13 @@ function Projeto(props) {
             </div>
 
             <Carousel showThumbs={false} autoPlay={true} interval={2000} infiniteLoop={true}>
-              <div>
-                <ImageListItem>
-                  <img src={props.imagemSrc} alt={props.imagemAlt} />
-                </ImageListItem>
-              </div>
-              <div>
-                <ImageListItem>
-                  <img src={props.imagemSrc2} alt={props.imagemAlt} />
-                </ImageListItem>
-              </div>
-              <div>
-                <ImageListItem>
-                  <img src={props.imagemSrc3} alt={props.imagemAlt} />
-                </ImageListItem>
-              </div>
+              {imagens && imagens.map((imagens, index) => (
+                <div key={index}>
+                  <ImageListItem>
+                    <img src={imagens} alt={props.imagemAlt} />
+                  </ImageListItem>
+                </div>
+              ))}
             </Carousel>
 
             <div className="button-container">

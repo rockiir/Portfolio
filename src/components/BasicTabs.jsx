@@ -63,9 +63,18 @@ export default function BasicTabs() {
       <CustomTabPanel value={value} index={0}>
         <div style={{ display: 'flex', flexWrap: 'wrap' }}>
           <Projeto
-            imagemSrc={imagem1}
-            imagemSrc2={imagem2}
-            imagemSrc3={imagem3}
+            imagens={[imagem5, imagem6]}
+            imagemAlt="Descrição da imagem"
+            titulo="Portfólio"
+            descricaoResumida="Este projeto é um portfólio pessoal criado para exibir informações sobre mim, meus projetos, habilidades e formas de contato. Ele também inclui uma página de erro 404 para direcionar os usuários em caso de URL não encontrada."
+            descricao="Este projeto é um portfólio pessoal criado para exibir informações sobre mim, meus projetos, habilidades e formas de contato. Ele também inclui uma página de erro 404 para direcionar os usuários em caso de URL não encontrada."
+            tecnologias={['React', 'Node.js', 'Material-UI', 'React Icons', 'styled-components', 'EmailJS' ]} 
+            linkExecutar="https://raqueldematos.tech/#/"
+            linkCodigo="https://github.com/rockiir/Portfolio?tab=readme-ov-file#tecnologias"
+          />
+          <Projeto
+            imagens={[imagem1, imagem2, imagem3]}
+
             imagemAlt="Descrição da imagem"
             titulo="Projetos variados"
             tecnologias={['React', 'Node.js']} 
@@ -76,7 +85,7 @@ export default function BasicTabs() {
             linkCodigo="https://github.com/rockiir/Desafio-de-21-dias-de-codigo/"
           />
           <Projeto
-            imagemSrc={imagem4}
+            imagens={[imagem4]}
             imagemAlt="Descrição da imagem"
             titulo="Projeto com PokeApi"
             descricaoResumida="O   projeto 'Pokedex' é um aplicativo web que permite aos entusiastas de Pokémon pesquisar e obter informações detalhadas sobre seus Pokémon favoritos. Utilizando a API pública do Pokémon PokeApi..."
@@ -84,17 +93,6 @@ export default function BasicTabs() {
             tecnologias={['React', 'Node.js', 'Api']} 
             linkExecutar="https://rockiir.github.io/Pokedex/"
             linkCodigo="https://github.com/rockiir/Pokedex"
-          />
-          <Projeto
-            imagemSrc={imagem5}
-            imagemSrc2={imagem6}
-            imagemAlt="Descrição da imagem"
-            titulo="Portfólio"
-            descricaoResumida="Este projeto é um portfólio pessoal criado para exibir informações sobre mim, meus projetos, habilidades e formas de contato. Ele também inclui uma página de erro 404 para direcionar os usuários em caso de URL não encontrada."
-            descricao="Este projeto é um portfólio pessoal criado para exibir informações sobre mim, meus projetos, habilidades e formas de contato. Ele também inclui uma página de erro 404 para direcionar os usuários em caso de URL não encontrada."
-            tecnologias={['React', 'Node.js', 'Material-UI', 'React Icons', 'styled-components', 'EmailJS' ]} 
-            linkExecutar="https://raqueldematos.tech/#/"
-            linkCodigo="https://github.com/rockiir/Portfolio?tab=readme-ov-file#tecnologias"
           />
         </div>
       </CustomTabPanel>
